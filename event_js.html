@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>&#x1F512; Event JS</title>
+    </head>
+    <body>
+        <h1 class="headling">&#x1F512; Padlock</h1>
+        <hr>
+        <div id="change">
+            <img id="padlock" src="https://i.ibb.co/Jn0jcb0/lock.png">
+            <p></p>
+            <button id="action-btn" class="btn">Tap to lock/unlock</button>
+        </div>
+        <script>
+            var button = document.getElementById("action-btn");
+            var padlock = document.getElementById("padlock");
+            button.addEventListener("click", function(){
+                    if (padlock.src === "https://i.ibb.co/Jn0jcb0/lock.png") {
+                        padlock.src = "https://i.ibb.co/8jVzwyX/unlock.png";
+                    } else {
+                        padlock.src = "https://i.ibb.co/Jn0jcb0/lock.png";
+                    }
+            });
+        </script>
+    </body>
+</html>
