@@ -11,7 +11,7 @@
         <h1 class="headling">&#x1F512; Padlock</h1>
         <hr>
         <div id="change">
-            <img id="padlock" src="https://i.ibb.co/Jn0jcb0/lock.png">
+            <img id="padlock" alt="padlock locked" src="https://i.ibb.co/Jn0jcb0/lock.png">
             <p></p>
             <button id="action-btn" class="btn">Tap to lock/unlock</button>
         </div>
@@ -21,8 +21,10 @@
             button.addEventListener("click", function(){
                     if (padlock.src === "https://i.ibb.co/Jn0jcb0/lock.png") {
                         padlock.src = "https://i.ibb.co/8jVzwyX/unlock.png";
+                        padlock.alt = "padlock unlocked";
                     } else {
                         padlock.src = "https://i.ibb.co/Jn0jcb0/lock.png";
+                        padlock.alt = "padlock locked";
                     }
             });
         </script>
